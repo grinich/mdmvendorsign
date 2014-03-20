@@ -1,5 +1,4 @@
 # mdmvendorsign
-=============
 
 Create a certificate signing request as a "vendor" of Apple's MDM push notification service
 
@@ -7,7 +6,7 @@ This script produces the special encoded plist that is uplaoded to the [Apple Pu
 
 Usually, this certificate is obtained by uploading a certificate request (CSR) to your MDM vendor who then signs the certificate using their MDM Signing Certificate. If you are part of the iOS Developer Enterprise Program, you can request a vendor certificate and do this youself.
 
-=============
+
 
 ## Setup
 
