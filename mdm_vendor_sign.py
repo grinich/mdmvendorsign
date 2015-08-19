@@ -72,7 +72,7 @@ openssl rsa -in key.pem -out the_private_key.key
 	# Verify MDM vendor certificate
 	# openssl x509 -noout -in mdm.cer -inform DER
 	p('Verifying %s ... ' % cli_args['mdm'])
-	mdm_cert_file = open(cli_args['mdm']).read()
+	mdm_cert_file = open(cli_args['mdm'],'rb').read()  # Binary read
 	args = ['openssl', 'x509', '-noout', '-inform', 'DER' ]
 	command = subprocess.Popen(args, stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.STDOUT)
 	output, error = command.communicate(input = mdm_cert_file)	
