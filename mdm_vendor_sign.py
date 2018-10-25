@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # This is based loosely on Softthinker's java code found here
 # http://www.softhinker.com/in-the-news/iosmdmvendorcsrsigning
 # fuck java
